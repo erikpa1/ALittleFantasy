@@ -39,4 +39,4 @@ using IntMap = std::map<Int, ValueType>;
 template <typename ValueType>
 using StringMap = std::map<String, ValueType>;
 
-#define INFO(x) std::cout << __FILE__ << ":" << __LINE__ << x << std::endl;
+#define INFO(x) std::cout << __FILE__ << "| " << __LINE__ << "| " << x << std::endl;

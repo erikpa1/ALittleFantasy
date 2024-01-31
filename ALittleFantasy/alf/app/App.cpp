@@ -18,8 +18,11 @@ namespace alf
 
 		auto avatar = S<Avatar>();
 
+		SString name("Avatar");
 
-		INFO(avatar->GetId());
+		avatar->SetName(name);
+
+		INFO(avatar->GetName());
 
 		AddEntity(avatar);
 
@@ -50,7 +53,7 @@ namespace alf
 
 	void App::AddEntity(const S<Entity>& entity)
 	{
-		_entities[entity->GetId()] = entity;
+		_entities[entity->GetName()] = entity;
 	}
 
 	void App::_Init()
@@ -71,9 +74,11 @@ namespace alf
 
 	void App::_Update()
 	{
+		INFO("Going to iterate: " << _entities.size());
+
 		for (const auto& [key, entity] : _entities)
 		{
-			entity->Update();
+			INFO(key << entity);
 		}
 	}
 }

@@ -22,6 +22,6 @@ namespace alf
         void _Update();
 
         sf::RenderWindow _window;
-        IntMap<S<Entity>> _entities;
+        StringMap<S<Entity>> _entities;
     };
 }
