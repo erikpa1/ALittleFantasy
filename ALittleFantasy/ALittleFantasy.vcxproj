@@ -95,6 +95,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -161,12 +162,14 @@
   <ItemGroup>
     <ClCompile Include="alf.cpp" />
     <ClCompile Include="alf\app\App.cpp" />
+    <ClCompile Include="alf\app\DrawableHandler.cpp" />
     <ClCompile Include="alf\entities\Avatar.cpp" />
     <ClCompile Include="alf\entities\Entity.cpp" />
     <ClCompile Include="alf\languages\LanguageManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="alf\app\App.h" />
+    <ClInclude Include="alf\app\DrawableHandler.h" />
     <ClInclude Include="alf\entities\Avatar.h" />
     <ClInclude Include="alf\entities\Entity.h" />
     <ClInclude Include="alf\languages\LanguageManager.h" />

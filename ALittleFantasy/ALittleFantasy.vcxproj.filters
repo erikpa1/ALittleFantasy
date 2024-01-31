@@ -15,8 +15,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ALittleFantasy.cpp">
+    <ClCompile Include="alf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="alf\app\App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alf\app\DrawableHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alf\entities\Avatar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alf\entities\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alf\languages\LanguageManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alf\app\App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alf\app\DrawableHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alf\entities\Avatar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alf\entities\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alf\languages\LanguageManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alf\prelude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

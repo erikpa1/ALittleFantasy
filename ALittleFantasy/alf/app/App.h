@@ -1,22 +1,27 @@
 ﻿#pragma once
 #include "../prelude.h"
+#include <SFML/Graphics.hpp>
+
 
 namespace alf
 {
     class Entity;
+    class DrawableHandler;
+
 
     class App
     {
     public:
         void Start();
 
-        void AddEntity(S<Entity> & entity);
+        void AddEntity(const S<Entity>& entity);
 
-    private:
-        void Init();
-        void Draw();
-        void Update();
 
+        void _Init();
+        void _Draw(DrawableHandler& drawable);
+        void _Update();
+
+        sf::RenderWindow _window;
         IntMap<S<Entity>> _entities;
     };
 }

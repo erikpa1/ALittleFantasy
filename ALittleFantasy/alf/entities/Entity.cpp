@@ -1,5 +1,7 @@
 ﻿#include "Entity.h"
 
+#include "../app/DrawableHandler.h"
+
 
 namespace alf
 {
@@ -15,8 +17,9 @@ namespace alf
     {
     }
 
-    void Entity::Draw()
+    void Entity::Draw(DrawableHandler& drawable)
     {
+        drawable.DrawSprite(_spriteId, _position, _scale);
     }
 
     void Entity::Update()
